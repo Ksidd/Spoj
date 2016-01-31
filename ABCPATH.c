@@ -1,6 +1,7 @@
 /************************************************************************
 Author         :- Siddharth Rajendra Kawar
-Program        :- SPOJ ABCPATH problem
+Program        :- SPOJ classical problem
+Problem Code   :- ABCPATH
 Submitted      :- 2015-04-04
 SPOJ user name :- Ksidd 
 ************************************************************************/
