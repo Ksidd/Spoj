@@ -1,3 +1,10 @@
+/************************************************************************
+Author         :- Siddharth Rajendra Kawar
+Program        :- SPOJ classical problem
+Problem Code   :- ADDREV
+Submitted      :- 2011-06-13
+SPOJ user name :- Ksidd 
+************************************************************************/
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -6,28 +13,35 @@ int main()
 	int i,n;
 
 	scanf("%d",&n);
-	for(i=0;i<n;i++){
-	char nu1[1000],nu2[1000],nr1[1000],nr2[1000],nr3[1000];
-	int num1,i,p=-1,num2,j=0,num3;
-	int rev=0,k;
-	num3=0;
-	scanf("%s %s",nu1,nu2);
-	reverse(&nu1,&nr1);
-	reverse(&nu2,&nr2);
-	num1=atoi(nr1);
-	num2=atoi(nr2);
-	num3=num1+num2;
-	k=multiple(num3);
-	rev=reversen(num3,k);
-	printf("%d\n",rev);	
+	for(i=0;i<n;i++)
+	{
+		char nu1[1000],nu2[1000],nr1[1000],nr2[1000],nr3[1000];
+		int num1,i,p=-1,num2,j=0,num3;
+		int rev=0,k;
+		
+		num3=0;
+		scanf("%s %s",nu1,nu2);
+		
+		reverse(&nu1,&nr1);
+		reverse(&nu2,&nr2);
+		
+		num1=atoi(nr1);
+		num2=atoi(nr2);
+		num3=num1+num2;
+		
+		k=multiple(num3);
+		
+		rev=reversen(num3,k);
+		printf("%d\n",rev);	
 	
-}return 0;}
-reverse(char *nu1,char *nr1)
+	}
+	return 0;
+}
+void reverse(char *nu1,char *nr1)
 {
 	int p=0,j=0;
 	while(*(nu1+p))
 	{	
-		//printf("check1\n");
 		p++;
 	}
 	p--;
